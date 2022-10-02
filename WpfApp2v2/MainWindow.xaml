@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DockPanel Grid.ColumnSpan="3">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_Plik">
+                    <MenuItem Header="_Otwórz" Click="MenuOtworz_Click"/>
+                    <MenuItem Header="_Zapisz" Click="MenuZapisz_Click"/>
+                    <MenuItem Header="_Wyjdź" Click="MenuWyjdz_Click"/>
+                </MenuItem>
+            </Menu>
+            <StackPanel Margin="0,5.4,0,0" Width="790"/>
+        </DockPanel>
+        <TextBlock Name ="nazwasklepuText"  HorizontalAlignment="Left" Height="75" Margin="197,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="414" FontSize="20" FontFamily="Normal"><Run Text="  "/><LineBreak/><Run/><Run Text=" "/></TextBlock>
+        <Button Content="Pracownik" HorizontalAlignment="Left" Height="66" Margin="197,117,0,0" VerticalAlignment="Top" Width="382" Click="Button_ClickPracownik"/>
+        <Button Content="Klient" HorizontalAlignment="Left" Height="59" Margin="197,235,0,0" VerticalAlignment="Top" Width="382" Click="Button_ClickKlient"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="Tlo1.png"/>
+        </Grid.Background>
+    </Grid>
+</Window>
